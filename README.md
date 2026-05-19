@@ -1,47 +1,8 @@
-# Praktikum 11 - Spring Boot Authentication
+<img width="1320" height="912" alt="register_page" src="https://github.com/user-attachments/assets/28e8649e-2772-455e-b90a-4fa0de888a14" />
+<img width="1320" height="912" alt="login_page" src="https://github.com/user-attachments/assets/3ad4f04d-a882-40a0-9e46-98dc85754fed" />
+<img width="1320" height="912" alt="home_page" src="https://github.com/user-attachments/assets/ffe546d0-8cd0-4230-a6a3-906419f67d90" />
 
-Proyek ini adalah implementasi dari sistem autentikasi dasar menggunakan Java Spring Boot dan database PostgreSQL.
 
-## Screenshot Hasil
 
-### 1. Halaman Login
-![Halaman Login](./screenshots/login.png)
-
-### 2. Halaman Register
-![Halaman Register](./screenshots/register.png)
-
-### 3. Halaman Home
-![Halaman Home](./screenshots/home.png)
-
-### 4. Running App di WSL
-![Running di WSL](./screenshots/running_wsl.png)
-
-### 5. Isi File `docker-compose.yml`
-![Docker Compose](./screenshots/docker_compose.png)
-
-*(Isi file `docker-compose.yml` juga dapat dilihat di repository ini)*
-```yaml
-version: '3.8'
-
-services:
-  db:
-    image: postgres:15
-    container_name: praktikum_db_container
-    environment:
-      POSTGRES_DB: praktikum_db
-      POSTGRES_USER: praktikum_user
-      POSTGRES_PASSWORD: 12345
-    ports:
-      - "5433:5432"
-    volumes:
-      - postgres_data:/var/lib/postgresql/data
-
-volumes:
-  postgres_data:
-```
-
-### 6. Isi Data pada Tabel
-![Isi Tabel Database](./screenshots/database_table.png)
-
----
-**Catatan:** Silakan letakkan gambar-gambar screenshot asli Anda di dalam folder `screenshots/` dengan nama file yang sesuai agar dapat tampil di README ini.
+data aktual di database setelah proses registrasi akun testuser:
+<img width="1320" height="912" alt="database_table" src="https://github.com/user-attachments/assets/7e9935de-9f39-43fe-8be1-682788cbdbf2" />
