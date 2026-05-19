@@ -1,0 +1,23 @@
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### IDE ###
+.idea/
+*.iws
+*.iml
+*.ipr
+.settings/
+.classpath
+.project
+.metadata/
+bin/
+tmp/
+
+### H2 Database ###
+*.mv.db
+*.trace.db
+
+### Log files ###
+*.log
